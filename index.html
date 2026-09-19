@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Student Hub - colorful all-in-one student tools, resources, and college guidance." />
+  <meta name="theme-color" content="#6c5ce7" />
+  <title>Student Hub | Learn. Organize. Grow.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="#home"><span class="brand-icon">🎓</span> Student<span>Hub</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#tools">Tools</a>
+        <a href="#resources">Resources</a>
+        <a href="#college">College Hub</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR EVERYDAY STUDENT COMPANION</p>
+          <h1>Study smarter.<br /><span>Grow faster.</span></h1>
+          <p class="hero-text">One colorful space for student tools, study resources, college guidance, and everyday academic organization.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#tools">Explore Tools →</a>
+            <a class="btn secondary" href="#resources">View Resources</a>
+          </div>
+          <div class="mini-stats">
+            <div><strong>3+</strong><span>Useful sections</span></div>
+            <div><strong>100%</strong><span>Beginner friendly</span></div>
+            <div><strong>Free</strong><span>To get started</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="floating-bubble bubble-one">📚</div>
+          <div class="floating-bubble bubble-two">✨</div>
+          <div class="dashboard-card">
+            <div class="dashboard-top"><span>My Student Space</span><span class="status-dot"></span></div>
+            <div class="progress-ring">🎯</div>
+            <h3>Your goals, your progress</h3>
+            <p>Small steps every day create big results.</p>
+            <div class="dashboard-row"><span>Study resources</span><b>Ready</b></div>
+            <div class="dashboard-row"><span>Academic tools</span><b>Ready</b></div>
+            <div class="dashboard-row"><span>College planning</span><b>Ready</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">QUICK & USEFUL</p><h2>Student Tools</h2><p>Simple calculators for everyday academic planning.</p></div>
+        <div class="tools-grid">
+          <article class="card tool-card">
+            <div class="card-icon purple">🧮</div><h3>CGPA Calculator</h3>
+            <p>Enter your semester GPAs to calculate an average CGPA.</p>
+            <label for="gpaInput">Semester GPAs (comma separated)</label>
+            <input id="gpaInput" placeholder="8.2, 8.7, 9.1" />
+            <button class="btn primary full" id="gpaBtn">Calculate CGPA</button>
+            <p class="result" id="gpaResult">Your result will appear here.</p>
+          </article>
+          <article class="card tool-card">
+            <div class="card-icon orange">📅</div><h3>Attendance Calculator</h3>
+            <p>Check how many classes you need to attend to reach a target.</p>
+            <div class="two-inputs">
+              <div><label for="attended">Attended</label><input id="attended" type="number" min="0" placeholder="35" /></div>
+              <div><label for="conducted">Conducted</label><input id="conducted" type="number" min="1" placeholder="45" /></div>
+            </div>
+            <label for="target">Target percentage</label>
+            <input id="target" type="number" min="1" max="100" value="75" />
+            <button class="btn primary full" id="attendanceBtn">Check Attendance</button>
+            <p class="result" id="attendanceResult">Your result will appear here.</p>
+          </article>
+          <article class="card tool-card">
+            <div class="card-icon green">✅</div><h3>Study Checklist</h3>
+            <p>Add a task and tick it off when completed.</p>
+            <div class="task-input"><input id="taskInput" placeholder="e.g. Revise C pointers" /><button id="addTask">+</button></div>
+            <ul class="task-list" id="taskList"><li><label><input type="checkbox" /> Review today's notes</label></li><li><label><input type="checkbox" /> Practice 3 problems</label></li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="resources">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">LEARN SOMETHING NEW</p><h2>Study Resources</h2><p>Replace these cards with your favorite learning links.</p></div>
+        <div class="resource-grid">
+          <a class="resource-card" href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener"><span>🌐</span><h3>Web Development</h3><p>Learn HTML, CSS, and JavaScript.</p><b>Explore →</b></a>
+          <a class="resource-card" href="https://www.geeksforgeeks.org/c/" target="_blank" rel="noopener"><span>💻</span><h3>C Programming</h3><p>Practice programming concepts and problems.</p><b>Explore →</b></a>
+          <a class="resource-card" href="https://www.khanacademy.org/" target="_blank" rel="noopener"><span>🧠</span><h3>General Learning</h3><p>Build foundations with guided lessons.</p><b>Explore →</b></a>
+          <a class="resource-card" href="https://scholar.google.com/" target="_blank" rel="noopener"><span>🔎</span><h3>Research Search</h3><p>Find academic papers and references.</p><b>Explore →</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="college">
+      <div class="container college-panel">
+        <div><p class="eyebrow">YOUR ACADEMIC JOURNEY</p><h2>College Hub</h2><p>Use this section for your college timetable, announcements, branch resources, clubs, campus links, and student tips.</p><div class="chip-row"><span>📌 Announcements</span><span>🗓️ Timetable</span><span>📘 Branch Notes</span><span>🤝 Clubs</span></div></div>
+        <div class="quote-card"><span>💡</span><h3>Student tip</h3><p>Keep your notes, deadlines, and useful links in one organized place.</p></div>
+      </div>
+    </section>
+
+    <section class="section soft" id="about">
+      <div class="container about-content"><p class="eyebrow">ABOUT THE PROJECT</p><h2>Built for students, by students.</h2><p>Student Hub is a customizable starter website. Add your own resources, college information, tools, and ideas as the project grows.</p><a class="btn primary" href="mailto:hello@example.com">Contact</a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><p>© <span id="year"></span> Student Hub. Made with curiosity 💜</p><a href="#home">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
